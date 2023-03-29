@@ -8,7 +8,7 @@ const workingHoursMiddleware = (req, res, next) => {
   const dayOfWeek = now.day();
   const hour = now.hour();
   //console.log(`Current day: ${dayOfWeek}, hour: ${hour}`);
-  if (dayOfWeek >= 1 && dayOfWeek <= 5 && hour >= 9 && hour <= 23) {
+  if (dayOfWeek >= 1 && dayOfWeek <= 5 && hour >= 9 && hour <= 17) {
     next();
   } else {
     res
